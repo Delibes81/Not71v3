@@ -1,0 +1,128 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+}
+
+.scrolled {
+    padding: 1rem 0;
+    background: rgba(23, 48, 62, 0.85);
+    /* Dark Glass */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    object-fit: contain;
+    /* Ideally, use a white version of the logo for dark mode, or use CSS filter if needed */
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.desktopNav {
+    display: none;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navLink {
+    color: var(--color-cream);
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navLink:hover {
+    opacity: 1;
+    color: var(--color-champagne);
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color-champagne);
+    transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.ctaButton {
+    border-color: var(--color-champagne);
+    color: var(--color-champagne);
+}
+
+.ctaButton:hover {
+    background-color: var(--color-champagne);
+    color: var(--color-midnight);
+}
+
+.menuBtn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-midnight);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.mobileNavLink {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    color: var(--color-cream);
+    opacity: 0.8;
+    transition: color 0.3s;
+}
+
+.mobileNavLink:hover {
+    color: var(--color-champagne);
+    opacity: 1;
+}
+
+@media (min-width: 1024px) {
+    .desktopNav {
+        display: flex;
+    }
+
+    .menuBtn {
+        display: none;
+    }
+}

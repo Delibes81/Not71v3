@@ -1,0 +1,79 @@
+.main {
+    background-color: var(--color-midnight);
+    min-height: 100vh;
+    padding-top: 10rem;
+}
+
+.container {
+    margin-bottom: 8rem;
+}
+
+.heading {
+    font-family: var(--font-playfair);
+    font-size: 3.5rem;
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-champagne);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.cardTitle {
+    font-family: var(--font-playfair);
+    font-size: 1.8rem;
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.excerpt {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.link {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-cream);
+    border-bottom: 1px solid var(--color-champagne);
+    padding-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,54 @@
+.main {
+    background-color: var(--color-midnight);
+    min-height: 100vh;
+}
+
+.hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heroBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 34, 46, 0.7);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font-playfair);
+    font-size: 4rem;
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-champagne);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding-bottom: 4rem;
+}

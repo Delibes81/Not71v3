@@ -1,0 +1,110 @@
+.main {
+    background-color: var(--color-midnight);
+    min-height: 100vh;
+    padding-top: 10rem;
+    /* Space for fixed header */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    font-family: var(--font-playfair);
+    font-size: 3rem;
+    color: var(--color-cream);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-champagne);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-champagne);
+    margin-bottom: 2rem;
+    opacity: 0.5;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    color: rgba(249, 247, 242, 0.8);
+    /* Cream with opacity */
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.credentials {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credentials h3 {
+    font-family: var(--font-playfair);
+    font-size: 1.5rem;
+    color: var(--color-cream);
+    margin-bottom: 1rem;
+}
+
+.credentials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.credentials li {
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.credentials li::before {
+    content: "•";
+    color: var(--color-champagne);
+    position: absolute;
+    left: 0;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: center;
+    }
+
+    .imageColumn {
+        order: 2;
+        /* Image on right for variety from Home page editorial */
+    }
+
+    .textColumn {
+        order: 1;
+    }
+
+    .title {
+        font-size: 4.5rem;
+    }
+}

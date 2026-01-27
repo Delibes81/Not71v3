@@ -1,0 +1,12 @@
+.main {
+  background-color: var(--color-midnight);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Ensure smooth transitions between sections */
+.content {
+  position: relative;
+  z-index: 1;
+}

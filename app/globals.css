@@ -1,0 +1,66 @@
+:root {
+  /* Brand Palette - Quiet Luxury */
+  --color-midnight: #2C5D77; /* Deep Slate Blue - Primary Bg */
+  --color-dark-navy: #1A3A4D; /* Darker accent for gradients */
+  --color-champagne: #E5D3B3; /* Warm Gold - Accents */
+  --color-cream: #F9F7F2;     /* Off-White - Text */
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-heavy: rgba(23, 48, 62, 0.85);
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-manrope);
+  
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-cream);
+  background-color: var(--color-midnight);
+  font-family: var(--font-sans), sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-champagne);
+  color: var(--color-midnight);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), serif;
+  color: var(--color-cream);
+  font-weight: 400; /* Lighter weights for elegance */
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1400px; /* Wider for cinematic feel */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
