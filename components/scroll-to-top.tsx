@@ -7,7 +7,16 @@ export function ScrollToTop() {
     const pathname = usePathname();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // Use a small timeout to ensure it runs after any immediate browser restoration
+        const timeout = setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "instant", // Force instant jump
+            });
+        }, 10);
+
+        return () => clearTimeout(timeout);
     }, [pathname]);
 
     return null;
