@@ -49,7 +49,7 @@ export function EditorialSection() {
                         {/* Abstract Architectural or Portrait Image */}
                         <div className={styles.imageContainer}>
                             <Image
-                                src="/notary-portrait.png"
+                                src="/notary-portrait.jpg"
                                 alt="Lic. Eduardo J. Muñoz Pinchetti"
                                 fill
                                 style={{ objectFit: 'cover' }}

@@ -3,6 +3,8 @@ import { Manrope, Playfair_Display } from "next/font/google"; // New Fonts
 import "./globals.css";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
+import { FloatingWhatsapp } from "@/components/floating-whatsapp";
+
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
@@ -28,6 +30,7 @@ export default function RootLayout({
       <body className={`${manrope.variable} ${playfair.variable} antialiased`}>
         <ScrollToTop />
         {children}
+        <FloatingWhatsapp />
       </body>
     </html>
   );

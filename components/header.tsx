@@ -33,8 +33,8 @@ export function Header() {
                         <Image
                             src="/logo.png"
                             alt="Notaría 71 CDMX"
-                            width={160}
-                            height={50}
+                            width={200}
+                            height={60}
                             className={styles.logo}
                         />
                     </Link>

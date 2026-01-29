@@ -12,7 +12,7 @@ export default function NosotrosPage() {
                 <div className={styles.imageColumn}>
                     <div className={styles.imageWrapper}>
                         <Image
-                            src="/notary-portrait.png"
+                            src="/notary-portrait.jpg"
                             alt="Lic. Eduardo J. Muñoz Pinchetti y Equipo"
                             fill
                             style={{ objectFit: "cover" }}
@@ -42,6 +42,60 @@ export default function NosotrosPage() {
                             <li>Rigor técnico en cada instrumento notarial.</li>
                             <li>Eficiencia y transparencia en la gestión.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`container ${styles.teamSection}`}>
+                <h2 className={styles.teamHeading}>Nuestro Equipo</h2>
+                <div className={styles.teamGrid}>
+                    <div className={styles.teamMember}>
+                        <div className={styles.memberImageWrapper}>
+                            <Image
+                                src="/lawyer-1.png"
+                                alt="Abogado Senior"
+                                fill
+                                style={{ objectFit: "cover" }}
+                            />
+                        </div>
+                        <h3 className={styles.memberName}>Lic. Roberto Silva</h3>
+                        <span className={styles.memberRole}>Derecho Corporativo</span>
+                    </div>
+                    <div className={styles.teamMember}>
+                        <div className={styles.memberImageWrapper}>
+                            <Image
+                                src="/lawyer-2.png"
+                                alt="Abogada Asociada"
+                                fill
+                                style={{ objectFit: "cover" }}
+                            />
+                        </div>
+                        <h3 className={styles.memberName}>Lic. Ana María Torres</h3>
+                        <span className={styles.memberRole}>Derecho Inmobiliario</span>
+                    </div>
+                    <div className={styles.teamMember}>
+                        <div className={styles.memberImageWrapper}>
+                            <Image
+                                src="/lawyer-3.png"
+                                alt="Abogado Asociado"
+                                fill
+                                style={{ objectFit: "cover" }}
+                            />
+                        </div>
+                        <h3 className={styles.memberName}>Lic. Carlos Méndez</h3>
+                        <span className={styles.memberRole}>Litigio y Sucesiones</span>
+                    </div>
+                    <div className={styles.teamMember}>
+                        <div className={styles.memberImageWrapper}>
+                            <Image
+                                src="/lawyer-4.png"
+                                alt="Abogada Senior"
+                                fill
+                                style={{ objectFit: "cover" }}
+                            />
+                        </div>
+                        <h3 className={styles.memberName}>Lic. Patricia Vega</h3>
+                        <span className={styles.memberRole}>Fe Pública</span>
                     </div>
                 </div>
             </div>

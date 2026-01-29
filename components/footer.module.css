@@ -2,7 +2,7 @@
     background-color: #0f222e;
     /* Darkest Navy */
     color: var(--color-cream);
-    padding: 8rem 0 4rem;
+    padding: 4rem 0 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 .logoWrapper {
@@ -40,7 +40,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--color-champagne);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .text {
@@ -58,7 +58,7 @@
 .link {
     display: block;
     font-family: var(--font-playfair);
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: var(--color-cream);
     opacity: 0.5;
     transition: all 0.3s;
